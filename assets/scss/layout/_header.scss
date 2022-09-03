@@ -1,0 +1,23 @@
+.c-header{
+  
+  padding: 20px 0 20px;
+  @include mq('desktop'){
+    padding: 20px 0 40px;
+    display: flex;
+    align-items: center;
+      justify-content: space-between;
+  }
+  &__block{
+    display: flex;
+    flex-wrap: wrap;
+  }
+  &__line{
+    width: 30px;
+    margin-left: 10px;
+    display: flex;
+    align-items: center;
+    @include mq('desktop'){
+      width: 47px;
+    }
+  }
+}

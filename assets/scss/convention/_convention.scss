@@ -1,0 +1,20 @@
+.convention{
+  padding: 42px 0 38px;
+  @include mq('desktop'){
+    padding: 55px 0 50px;
+  }
+  &__title{
+    text-align: center;
+    font-weight: bold;
+    font-size: 15px;
+    @include mq('desktop'){
+      font-size: 18px;
+    }
+  }
+  &__list{
+    margin-top: 30px;
+    @include mq('desktop'){
+      margin-top: 40px;
+    }
+  }
+}

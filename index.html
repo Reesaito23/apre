@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>アプレオークション</title>
+  <link rel="stylesheet" href="/assets/css/destyle.css">
+  <link rel="stylesheet" href="/assets/scss/style.css">
+
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+  <!-- Spartan font の読み込み -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=League+Spartan&display=swap" rel="stylesheet">
+  <!-- Tailwindcssの読み込み -->
+  <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet" />
+  <!-- Jqueryの読み込み -->
+  <script src="https://code.jquery.com/jquery-3.6.1.slim.min.js"
+    integrity="sha256-w8CvhFs7iHNVUtnSP0YKEg00p9Ih13rlL9zGqvLdePA=" crossorigin="anonymous"></script>
+</head>
+
+<!-- ヘッダー -->
+<header class="c-header l-inner--lv2">
+  <nav class="c-header__nav c-header-nav">
+    <ul class="c-header-nav__list">
+      <li><a href="" class="c-header-nav__item">ページTOP</a></li>
+      <li class="c-header-nav__list-login">
+        <p class="c-header-nav__item">ログイン</p>
+        <ul class="sub">
+          <li><a href="" class="sub__item">6日大会ログイン</a></li>
+          <li><a href="" class="sub__item">11日大会ログイン</a></li>
+          <li><a href="" class="sub__item">16日大会ログイン</a></li>
+          <li><a href="" class="sub__item">25日大会ログイン</a></li>
+        </ul>
+      </li>
+      <li><a href="" class="c-header-nav__item">新規登録</a></li>
+      <li><a href="" class="c-header-nav__item">規約</a></li>
+      <li><a href="" class="c-header-nav__item">参加者同意事項</a></li>
+    </ul>
+  </nav>
+  <div class="c-header__block">
+    <div class="c-header__tel c-header-tel">
+      <div class="c-header-tel__num">
+        <img src="/assets/image/header/tel-01.svg" alt="">
+        <p>03-5817-8140</p>
+      </div>
+      <p class="c-header-tel__fax">Fax : 03-5817-4846</p>
+    </div>
+    <a href="" class="c-header__contact c-header-contact">
+      <img src="/assets/image/header/contact-01.svg" alt="">
+      <p>お問い合わせ</p>
+    </a>
+    <a href="" class="c-header__line">
+      <img src="/assets/image/header/line-01.svg" alt="">
+    </a>
+  </div>
+</header>
+<body>
+  <!-- FV -->
+  <section id="fv">
+    <img class="fv__image" src="/assets/image/fv/image01.jpg" alt="">
+    <div class="fv">
+      <div class="l-inner--lv1 fv__block">
+        <div class="fv-item">
+          <p class="fv-item__text">オークションの落札結果を過去開催分も含めて<br class="md:hidden">いつでもご覧いただけます。</p>
+          <a href="" class="fv-item__button">相場検索サイト</a>
+        </div>
+        <div class="fv-item">
+          <p class="fv-item__text">オークションへの出品のご予約は<br class="md:hidden">こちらから行っていただけます。</p>
+          <a href="" class="fv-item__button">出品予約はこちら</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- convention -->
+  <section class="convention">
+    <div class="l-inner--lv1">
+      <h2 class="convention__title">会員登録がお済みの方　入札はこちらから</h2>
+      <ul class="convention__list convention-list">
+        <li class="convention-list__row">
+          <p class="convention-list__month convention-list__item">6日大会</p>
+          <p class="convention-list__dead convention-list__item">出品締切：毎月25日<br>※10：00～ 箱番１より順次締切</p>
+          <p class="convention-list__preview convention-list__item">下見期間：毎月2日～5日</p>
+          <p class="convention-list__tender convention-list__item">入札期間：6日</p>
+          <a href="" class="convention-list__login convention-list__item">ログインはこちら</a>
+        </li>
+        <li class="convention-list__row">
+          <p class="convention-list__month convention-list__item">11日大会</p>
+          <p class="convention-list__dead convention-list__item">出品締切：毎月月末<br>※10：00～ 箱番１より順次締切</p>
+          <p class="convention-list__preview convention-list__item">下見期間：毎月7日～10日</p>
+          <p class="convention-list__tender convention-list__item">入札期間：11日</p>
+          <a href="" class="convention-list__login convention-list__item">ログインはこちら</a>
+        </li>
+        <li class="convention-list__row">
+          <p class="convention-list__month convention-list__item">16日大会</p>
+          <p class="convention-list__dead convention-list__item">出品締切：毎月16日<br>※10：00～ 箱番１より順次締切</p>
+          <p class="convention-list__preview convention-list__item">下見期間：毎月12日～15日</p>
+          <p class="convention-list__tender convention-list__item">入札期間：16日</p>
+          <a href="" class="convention-list__login convention-list__item">ログインはこちら</a>
+        </li>
+        <li class="convention-list__row">
+          <p class="convention-list__month convention-list__item">25日大会</p>
+          <p class="convention-list__dead convention-list__item">出品締切：毎月14日<br>※10：00～ 箱番１より順次締切</p>
+          <p class="convention-list__preview convention-list__item">下見期間：毎月21日～24日</p>
+          <p class="convention-list__tender convention-list__item">入札期間：25日</p>
+          <a href="" class="convention-list__login convention-list__item">ログインはこちら</a>
+        </li>
+      </ul>
+    </div>
+
+  </section>
+  
+  <!-- about -->
+  <section id="about">
+    <img class="about__image" src="/assets/image/about/image-01.jpg" alt="">
+    <div class="about__block l-inner--lv2">
+      <div class="about__mark"></div>
+      <h2 class="c-section-title about__title"><span class="en">About APRE?</span>アプレオークションとは</h2>
+      <p class="about__text">
+        アプレが独自に仕入れた初荷に加え、多数の取引企業様とのパートナーシップによる豊富な商品量を誇るオークションです。
+        下見から落札までを全てwebで行いますので、どこにいてもオークションへ参加できます。<br><br>
+        
+        下見期間中は、オークション下見会場での現物下見はもちろん、会場まで足を運べない遠方の業者様は、PC、スマホ、タブレットからいつでもどこでも、商品の下見が可能です。
+        また、入札は全てwebでの競り上がり方式を採用しているため、しがらみの無い公明正大なオークションを実現しています。
+      </p>
+      <a href="" class="about__button c-section-button">会員登録はこちら</a>
+    </div>
+  </section>
+
+  <!-- Feature -->
+  <section class="feature">
+    <div class="l-inner--lv1">
+      <h2 class="c-section-title feature__title"><span class="en">Feature</span>アプレオークションの6つの強み</h2>
+      <ol class="feature__list feature-list">
+        <li class="feature-list__item">
+          <p class="feature-list__num">01</p>
+          <img src="/assets/image/feature/list-01.svg" alt="" class="feature-list__image">
+          <p class="feature-list__text">入会金<br>年会費無料</p>
+        </li>
+        <li class="feature-list__item">
+          <p class="feature-list__num">02</p>
+          <img src="/assets/image/feature/list-02.svg" alt="" class="feature-list__image">
+          <p class="feature-list__text">いつでも、どこでも<br>下見・入札・競りに参加可能</p>
+        </li>
+        <li class="feature-list__item">
+          <p class="feature-list__num">03</p>
+          <img src="/assets/image/feature/list-03.svg" alt="" class="feature-list__image">
+          <p class="feature-list__text">大手企業様との連携による<br>豊富な商品量</p>
+        </li>
+        <li class="feature-list__item">
+          <p class="feature-list__num">04</p>
+          <img src="/assets/image/feature/list-04.svg" alt="" class="feature-list__image">
+          <p class="feature-list__text">安定した<br>落札相場</p>
+        </li>
+        <li class="feature-list__item">
+          <p class="feature-list__num">05</p>
+          <img src="/assets/image/feature/list-05.svg" alt="" class="feature-list__image">
+          <p class="feature-list__text">状態の良くない商品も<br>売却可能</p>
+        </li>
+        <li class="feature-list__item">
+          <p class="feature-list__num">06</p>
+          <img src="/assets/image/feature/list-06.svg" alt="" class="feature-list__image">
+          <p class="feature-list__text">落札相場の一定額の<br>先払い制度あり<span>（要審査）</span></p>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- Product -->
+  <section class="product">
+    <div class="l-inner--lv1">
+      <h2 class="c-section-title product__title"><span class="en">Product</span>取扱商品一例</h2>
+      <div class="product__block">
+        <input id="product-brand" type="radio" name="tab_item" checked>
+        <input id="product-watch" type="radio" name="tab_item">
+        <input id="product-jewelry" type="radio" name="tab_item">
+        <nav class="product__nav product-nav">
+          <label class="product-nav__item product-nav__item-brand" for="product-brand">ブランド品</label>
+          <label class="product-nav__item product-nav__item-watch" for="product-watch">時計</label>
+          <label class="product-nav__item product-nav__item-jewelry" for="product-jewelry">宝石</label>
+        </nav>
+        <!-- ブランドコンテンツ -->
+        <div id="product__brand" class="product__contents product-contents">
+          <ul class="product-contents__block">
+            <li class="product-contents-item">
+               <div class="product-contents-item__block">
+                <img src="/assets/image/product/brand-01.jpg" alt="" class="product-contents-item__image">
+                <p class="product-contents-item__text">エルメス　ケリー</p>
+               </div>
+            </li>
+            <li class="product-contents-item">
+              <div class="product-contents-item__block">
+                <img src="/assets/image/product/brand-02.jpg" alt="" class="product-contents-item__image">
+                <p class="product-contents-item__text">エルメス　バーキン</p>
+              </div>
+            </li>
+            <li class="product-contents-item">
+              <div class="product-contents-item__block">
+                <img src="/assets/image/product/brand-03.jpg" alt="" class="product-contents-item__image">
+                <p class="product-contents-item__text">シャネル　バニティ　2wayチェーンショルダー</p>
+              </div>
+            </li>
+            <li class="product-contents-item">
+              <div class="product-contents-item__block">
+                <img src="/assets/image/product/brand-04.jpg" alt="" class="product-contents-item__image">
+                <p class="product-contents-item__text">シャネル　マトラッセ赤　チェーンショルダー</p>
+              </div>
+            </li>
+            <li class="product-contents-item">
+              <div class="product-contents-item__block">
+                <img src="/assets/image/product/brand-05.jpg" alt="" class="product-contents-item__image">
+                <p class="product-contents-item__text">ルイヴィトン　ダミエ　ネヴァーフルPM</p>
+              </div>
+            </li>
+          </ul>
+          <div class="product-contents__participate product-participate">
+            <p class="product-participate__title">ブランド大会ご参加はこちらから</p>
+            <ul class="product-participate__list product-participate-list">
+              <li class="product-participate-list__item">
+                <p class="product-participate-list__dead">出品締切：毎月25日</p>
+                <p class="product-participate-list__date">６日大会</p>
+                <a href="" class="product-participate-list__login">ログイン</a>
+              </li>
+              <li class="product-participate-list__item">
+                <p class="product-participate-list__dead">出品締切：毎月5日</p>
+                <p class="product-participate-list__date">16日大会</p>
+                <a href="" class="product-participate-list__login">ログイン</a>
+              </li>
+              <li class="product-participate-list__item">
+                <p class="product-participate-list__dead">出品締切：毎月14日</p>
+                <p class="product-participate-list__date">25日大会</p>
+                <a href="" class="product-participate-list__login">ログイン</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!-- 時計コンテンツ -->
+        <div id="product__watch" class="product__contents product-contents">
+          <ul class="product-contents__block">
+            <li class="product-contents-item">
+              <div class="product-contents-item__block">
+                <img src="/assets/image/product/watch-01.jpg" alt="" class="product-contents-item__image">
+                <p class="product-contents-item__text">CARTIER カルティエ クーガー パンテール ユニセックス</p>
+              </div>
+            </li>
+            <li class="product-contents-item">
+              <div class="product-contents-item__block">
+                <img src="/assets/image/product/watch-02.jpg" alt="" class="product-contents-item__image">
+                <p class="product-contents-item__text">GUCCI グッチ ダイヤベゼル・ラグベゼル Gミニ レディース</p>
+              </div>
+            </li>
+            <li class="product-contents-item">
+              <div class="product-contents-item__block">
+                <img src="/assets/image/product/watch-03.jpg" alt="" class="product-contents-item__image">
+                <p class="product-contents-item__text">ROLEX ロレックス チョコレート ヨットマスター40</p>
+              </div>
+            </li>
+            <li class="product-contents-item">
+              <div class="product-contents-item__block">
+                <img src="/assets/image/product/watch-04.jpg" alt="" class="product-contents-item__image">
+                <p class="product-contents-item__text">SEIKO セイコー グランドセイコー メンズ</p>
+              </div>
+            </li>
+            <li class="product-contents-item">
+              <div class="product-contents-item__block">
+                <img src="/assets/image/product/watch-05.jpg" alt="" class="product-contents-item__image">
+                <p class="product-contents-item__text">ZENITH ゼニス キャプテン エリート メンズ</p>
+              </div>
+            </li>
+          </ul>
+          <div class="product-contents__participate product-participate">
+            <p class="product-participate__title">時計大会ご参加はこちらから</p>
+            <ul class="product-participate__list product-participate-list">
+              <li class="product-participate-list__item">
+                <p class="product-participate-list__dead">出品締切：毎月月末</p>
+                <p class="product-participate-list__date">11日大会</p>
+                <a href="" class="product-participate-list__login">ログイン</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!-- 宝石コンテンツ -->
+        <div id="product__jewelry" class="product__contents product-contents">
+          <ul class="product-contents__block">
+            <li class="product-contents-item">
+              <div class="product-contents-item__block">
+                <img src="/assets/image/product/jewelry-01.jpg" alt="" class="product-contents-item__image">
+                <p class="product-contents-item__text">エメラルド　ネックレス</p>
+              </div>
+            </li>
+            <li class="product-contents-item">
+              <div class="product-contents-item__block">
+                <img src="/assets/image/product/jewelry-02.jpg" alt="" class="product-contents-item__image">
+                <p class="product-contents-item__text">サファイア ネックレス</p>
+              </div>
+            </li>
+            <li class="product-contents-item">
+              <div class="product-contents-item__block">
+                <img src="/assets/image/product/jewelry-03.jpg" alt="" class="product-contents-item__image">
+                <p class="product-contents-item__text">タンザナイト　リング</p>
+              </div>
+            </li>
+            <li class="product-contents-item">
+              <div class="product-contents-item__block">
+                <img src="/assets/image/product/jewelry-04.jpg" alt="" class="product-contents-item__image">
+                <p class="product-contents-item__text">パール　リング</p>
+              </div>
+            </li>
+            <li class="product-contents-item">
+              <div class="product-contents-item__block">
+                <img src="/assets/image/product/jewelry-05.jpg" alt="" class="product-contents-item__image">
+                <p class="product-contents-item__text">ペリドット　リング</p>
+              </div>
+            </li>
+          </ul>
+          <div class="product-contents__participate product-participate">
+            <p class="product-participate__title">宝石大会ご参加はこちらから</p>
+            <ul class="product-participate__list product-participate-list">
+              <li class="product-participate-list__item">
+                <p class="product-participate-list__dead">出品締切：毎月月末</p>
+                <p class="product-participate-list__date">11日大会</p>
+                <a href="" class="product-participate-list__login">ログイン</a>
+              </li>
+              <li class="product-participate-list__item">
+                <p class="product-participate-list__dead">出品締切：毎月14日</p>
+                <p class="product-participate-list__date">25日大会</p>
+                <a href="" class="product-participate-list__login">ログイン</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+  </section>
+  <!-- Price -->
+  <section class="price">
+    <div class="price__block l-inner--lv1">
+      <h2 class="c-section-title price__title"><span class="en">Price</span>参加費・手数料について</h2>
+      <div class="price__pre-contents price-pre-contents">
+        <img src="/assets/image/price/pre-contents-01.svg" alt="" class="price-pre-contents__image">
+        <div class="price-pre-contents__block">
+          <p class="price-pre-contents__title">入会金・年会費・下見参加費</p>
+          <p class="price-pre-contents__text">大会参加費 3,000円<span class="price-pre-contents__text-sub">※取引成立時のみご請求</span></p>
+        </div>
+      </div>
+      <ul class="price__list price-list">
+        <!-- １段目 -->
+        <li class="price-list__item price-list__item-title">
+          <p>ダイヤモンドルース</p>
+        </li>
+        <li class="price-list__item">
+          <p>販売委託手数料：3%<span>(ソーティング<br class="sm:hidden">無しは5％)</span></p>
+        </li>
+        <li class="price-list__item">
+          <p>落札手数料：3%</p>
+        </li>
+        <li class="price-list__item">
+          <p>指値：20,000～</p>
+        </li>
+        <!-- ２段目 -->
+        <li class="price-list__item price-list__item-title">
+          <p>ジュエリー</p>
+        </li>
+        <li class="price-list__item">
+          <p>販売委託手数料：5%</p>
+        </li>
+        <li class="price-list__item">
+          <p>落札手数料：3%</p>
+        </li>
+        <li class="price-list__item">
+          <p>指値：30,000～</p>
+        </li>
+        <!-- ３段目 -->
+        <li class="price-list__item price-list__item-title">
+          <p>ブランド品</p>
+        </li>
+        <li class="price-list__item">
+          <p>販売委託手数料：3%<span>(10,000円以下は<br class="sm:hidden">500円/1点)</span></p>
+        </li>
+        <li class="price-list__item">
+          <p>落札手数料：5%</p>
+        </li>
+        <li class="price-list__item">
+          <p>指値：20,000～</p>
+        </li>
+        <!-- ３段目 -->
+        <li class="price-list__item price-list__item-title">
+          <p>時計</p>
+        </li>
+        <li class="price-list__item">
+          <p>販売委託手数料：3%<span>(50,000円以下は<br class="sm:hidden">5%/1点)</span></p>
+        </li>
+        <li class="price-list__item">
+          <p>落札手数料：3%</p>
+        </li>
+        <li class="price-list__item">
+          <p>指値：30,000～</p>
+        </li>
+      </ul>
+      <p class="price__list-text">※各手数料には別途消費税がかかります。</p>
+    </div>
+  </section>
+  <!-- step -->
+  <section id="step" class="step">
+    <div class="step__block l-inner--lv1">
+      <h2 class="c-section-title step__title"><span class="en">Step</span>利用開始の流れ</h2>
+      <ol class="step__list step-list">
+        <li class="step-list__item">
+          <p class="step-list__num">01</p>
+          <img class="step-list__image" src="/assets/image/step/image-01.svg" alt="">
+          <p class="step-list__text">フォームより<br>お申込み</p>
+        </li>
+        <li class="step-list__item">
+          <p class="step-list__num">02</p>
+          <img class="step-list__image" src="/assets/image/step/image-02.svg" alt="">
+          <p class="step-list__text">必要書類の<br>ご提出</p>
+        </li>
+        <li class="step-list__item">
+          <p class="step-list__num">03</p>
+          <img class="step-list__image" src="/assets/image/step/image-03.svg" alt="">
+          <p class="step-list__text">書類の確認</p>
+        </li>
+        <li class="step-list__item">
+          <p class="step-list__num">04</p>
+          <img class="step-list__image" src="/assets/image/step/image-04.svg" alt="">
+          <p class="step-list__text">審査</p>
+        </li>
+        <li class="step-list__item">
+          <p class="step-list__num">05</p>
+          <img class="step-list__image" src="/assets/image/step/image-05.svg" alt="">
+          <p class="step-list__text">登録完了</p>
+        </li>
+      </ol>
+      <a href="" class="step__button c-section-button">会員登録はこちら</a>
+    </div>
+  </section>
+  <script src="https://code.jquery.com/jquery-3.6.1.min.js"
+    integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script>
+      $('.product-contents__block').slick({
+        infinite: true,
+        slidesToShow: 4,
+        slidesToScroll: 4, 
+        prevArrow: '<button class="product-contents__button product-contents__button-prev"></button>',
+        nextArrow: '<button class="product-contents__button product-contents__button-next"></button>',
+        responsive: [
+          {
+            breakpoint: 834, // 480〜767px以下のサイズに適用
+            settings: {
+              slidesToShow: 2,
+            },
+          },
+        ]
+      });
+    </script>
+</body>
+</html>

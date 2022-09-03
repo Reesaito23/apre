@@ -1,0 +1,27 @@
+.product-nav{
+  display: flex;
+  padding: 0 15px;
+  justify-content: space-between;
+  @include mq('desktop'){
+    padding: 0 30px;
+  }
+  &__item{
+    padding: 15px 0;
+    width: 30%;
+    color: #B7B4A4;
+    border-bottom: 1.4px solid #D8D4C7;
+    font-size: 16px;
+    @include mq('desktop'){
+      font-size: 22px;
+      padding: 30px 0;
+    }
+  }
+}
+// 選択されているタブのスタイルを変える
+#product-brand:checked~.product-nav .product-nav__item-brand,
+#product-watch:checked~.product-nav .product-nav__item-watch,
+#product-jewelry:checked~.product-nav .product-nav__item-jewelry {
+  color: #222222;
+    border-bottom: 1.4px solid #222;
+    font-weight: bold;
+}

@@ -1,0 +1,27 @@
+.l-inner {
+  &--lv0 {
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+  }
+
+  &--lv2 {
+    width: 95%;
+    margin: 0 auto;
+
+  @include mq('desktop'){
+      width: 80%;
+      max-width: 1150px;
+    }
+  }
+
+  &--lv1 {
+    width: 95%;
+    margin: 0 auto;
+
+    @include mq('desktop') {
+      width: 90%;
+      max-width: 1290px;
+    }
+  }
+}

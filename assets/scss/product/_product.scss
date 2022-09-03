@@ -1,0 +1,16 @@
+.product{
+  background-color: #FBFAF7;
+  padding: 68px 0 68px;
+  @include mq('desktop'){
+    padding: 96px 0 136px;
+  }
+  input {
+      display: none;
+    }
+  &__block{
+    margin-top: 30px;
+    @include mq('desktop'){
+      margin-top: 50px;
+    }
+  }
+}

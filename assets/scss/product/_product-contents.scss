@@ -1,0 +1,77 @@
+.product-contents{
+  height: 0;
+  opacity: 0;
+  &__block{
+    position: relative;
+    z-index: 0;
+    padding: 0 15px;
+    @include mq('desktop'){
+      padding: 0 30px;
+    }
+  }
+  &__button{
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background-color: #AB9F66;
+    border-radius: 50%;
+    z-index: 10;
+    @include mq('desktop'){
+      width: 56px;
+        height: 56px;
+    }
+    &-prev{
+      top: 50%;
+      left: -5px;
+      transform: translateY(-50%);
+      @include mq('desktop'){
+        left: 0;
+      }
+      &::after{
+        content: url('../image/product/arrow--prev.svg');
+        position: absolute;
+        top: 50%;
+        left: 9px;
+        transform: translateY(-50%);
+        @include mq('desktop'){
+          left: 22px;
+        }
+      }
+    }
+    &-next{
+      top: 50%;
+      right: -5px;
+      transform: translateY(-50%);
+      @include mq('desktop'){
+        right: 0;
+      }
+      &::after {
+          content: url('../image/product/arrow--next.svg');
+          position: absolute;
+            top: 50%;
+            right: 9px;
+            transform: translateY(-50%);
+            @include mq('desktop'){
+              right: 22px;
+            }
+        }
+    }
+  }
+  &__participate{
+    margin-top: 40px;
+    @include mq('desktop'){
+      margin-top: 86px;
+    }
+  }
+}
+/*選択されているタブのコンテンツのみを表示*/
+#product-brand:checked~.product-contents#product__brand,
+#product-watch:checked~.product-contents#product__watch,
+#product-jewelry:checked~.product-contents#product__jewelry {
+  height: auto;
+  margin-top: 30px;
+  opacity: 1;
+  @include mq('desktop'){
+    margin-top: 60px;
+  }
+}

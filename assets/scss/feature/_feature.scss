@@ -1,0 +1,15 @@
+.feature{
+  
+  padding: 32px 0 50px;
+  @include mq('desktop'){
+  padding: 64px 0 100px;
+  }
+  &__title {
+      &::after {
+        content: "Feature";
+      }
+    }
+    &__list{
+      margin-top: 64px;
+    }
+}

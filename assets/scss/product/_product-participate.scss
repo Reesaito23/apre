@@ -1,0 +1,17 @@
+.product-participate{
+  padding: 0 15px;
+  @include mq('desktop'){
+    padding: 0 30px;
+  }
+  &__title{
+    padding-bottom: 20px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 18px;
+    border-bottom: 1px solid #D8D4C7;
+    @include mq('desktop'){
+      font-size: 22px;
+      padding-bottom: 44px;
+    }
+  }
+}

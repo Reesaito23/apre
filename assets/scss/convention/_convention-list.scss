@@ -1,0 +1,99 @@
+.convention-list{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  @include mq('desktop'){
+    display: initial;
+  }
+  &__row{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 48%;
+    @include mq('desktop'){
+      width: 100%;
+      flex-wrap: nowrap;
+      justify-content: space-between;
+    }
+    &:not(:nth-child(1), :nth-child(2)){
+      margin-top: 20px;
+    }
+  }
+  &__item{
+    display: flex;
+    font-size: 11px;
+    width: 100%;
+    text-align: center;
+    align-items: center;
+      justify-content: center;
+    &:not(:first-child){
+      margin-top: 10px;
+    }
+    @include mq('desktop'){
+      font-size: 15px;
+      min-height: 88px;
+      text-align: initial;
+        align-items: initial;
+        justify-content: initial;
+    }
+    }
+  &__month{
+    background-color: rgba($color: #6F6743, $alpha: 0.05);
+    font-family: "游明朝体", "Yu Mincho", YuMincho, "ヒラギノ明朝 Pro", "Hiragino Mincho Pro", "MS P明朝", "MS PMincho", serif;
+    font-size: 24px;
+    color: #6F6743;
+    align-items: center;
+      justify-content: center;
+      padding: 20px 0;
+      @include mq('desktop'){
+        width: 22%;
+        max-width: 300px;
+        padding: 0;
+      }
+  }
+  &__dead{
+    
+    @include mq('desktop'){
+      padding-top: 20px;
+width: 18%;
+    }
+  }
+  &__preview{
+    @include mq('desktop') {
+      padding-top: 20px;
+        width: 17%;
+      }
+  }
+  &__tender{
+    @include mq('desktop') {
+      width: 15%;
+      padding-top: 20px;
+      }
+  }
+  &__login{
+    align-items: center;
+      justify-content: center;
+    background-color: #AB9F66;
+    font-size: 16px;
+    color: #fff;
+    position: relative;
+    padding: 15px 0;
+    width: 100%;
+    @include mq('desktop') {
+      max-width: 378px;
+        width: 23%;
+        height: 76px;
+      }
+    &::after {
+        content: url('../image/common/arrow--white.svg');
+        position: absolute;
+        right: 20px;
+        top: 50%;
+        transform: translateY(-50%);
+      }
+    &:hover{
+      background-color: #5A5437;
+    }
+  }
+}

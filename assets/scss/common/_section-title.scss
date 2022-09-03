@@ -1,0 +1,31 @@
+.c-section-title{
+  font-weight: bold;
+  font-size: 20px;
+  text-align: center;
+  position: relative;
+  @include mq('desktop'){
+    font-size: 35px;
+    padding-bottom: 20px;
+  }
+  .en{
+    display: block;
+    color: #AB9F66;
+    font-size: 0.514em;
+    margin-bottom: 15px;
+    font-weight: initial;
+  }
+  &::after{
+    position: absolute;
+    z-index: 0;
+    font-size: 50px;
+    color: rgba($color: #AB9F66, $alpha: 0.1);
+    white-space: nowrap;
+    bottom: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+    @include mq('desktop'){
+      font-size: 130px;
+      bottom: -30px;
+    }
+  }
+}

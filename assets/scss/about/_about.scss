@@ -1,0 +1,85 @@
+#about{
+  padding-bottom: 40px;
+  overflow: hidden;
+  @include mq('desktop'){
+    padding-bottom: 74px;
+  }
+}
+.about{
+  &__image{
+    width: 100%;
+  }
+  &__mark{
+    width: 1px;
+    height: 60px;
+    background-color: #A99F6D;
+    position: absolute;
+    top: -35px;
+    left: 50%;
+    @include mq('desktop'){
+      height: 100px;
+      top: -55px;
+    }
+  }
+  &__block{
+    background-color: #fff;
+    position: relative;
+    padding: 60px 0 45px 0;
+    box-shadow: 30px 30px 30px rgba($color: #000000, $alpha: 0.04);
+    margin-top: -50px;
+    @include mq('desktop'){
+      margin-top: -150px;
+      padding: 90px 0 85px 0;
+    }
+    &::after,&::before{
+      position: absolute;
+      transform: scale(0.6);
+      @include mq('desktop') {
+          transform: initial;
+        }
+    }
+    &::after{
+      content: url('../image/about/image-02.png');
+      top: -20px;
+      left: -30px;
+      transform-origin: left top;
+      @include mq('desktop'){
+        top: -50px;
+          left: 30px;
+          transform-origin: initial;
+      }
+    }
+    &:before{
+      content: url('../image/about/image-03.png');
+      bottom: -40px;
+      right: -25px;
+      transform-origin: right bottom;
+      @include mq('desktop'){
+        bottom: -74px;
+          right: 50px;
+          transform-origin: initial;
+      }
+    }
+  }
+  &__title{
+    &::after{
+      content: "About APRE?";
+    }
+  }
+  &__text{
+    width:90%;
+    margin: 20px auto 0 auto;
+    font-size: 13px;
+    line-height: 1.7;
+    @include mq('desktop'){
+      width: 70%;
+      font-size: 15px;
+    }
+  }
+  &__button{
+    margin: 15px auto 0 auto;
+    @include mq('desktop'){
+      margin: 30px auto 0 auto;
+    }
+  }
+}

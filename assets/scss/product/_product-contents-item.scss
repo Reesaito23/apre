@@ -1,0 +1,26 @@
+.product-contents-item{
+  &__block{
+    width: 98%;
+    background-color: #fff;
+    padding: 30px 10px 30px 10px;
+    height: 300px;
+    @include mq('desktop'){
+      height: 400px;
+      padding: 30px 26px 0 26px;
+    }
+  }
+  &__image{
+    margin: 0 auto;
+    width: 60%;
+    @include mq('desktop'){
+      width: initial;
+    }
+  }
+  &__text{
+    margin-top: 16px;
+    font-size: 13px;
+    @include mq('desktop'){
+      margin-top: 30px;
+    }
+  }
+}

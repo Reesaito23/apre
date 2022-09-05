@@ -85,12 +85,11 @@ body, header {
   .c-header-nav__list-login .sub {
     width: 200px;
     font-size: 15px;
-    bottom: -10px;
   }
 }
 
 .c-header-nav__list-login .sub > *:not(:first-child) {
-  margin-top: 1px;
+  border-top: 1px solid rgba(255, 255, 255, 0.6);
 }
 
 .c-header-nav__list-login .sub__item {
@@ -1058,7 +1057,7 @@ body, header {
 
 .product-contents-item__text {
   margin-top: 16px;
-  font-size: 13px;
+  font-size: 16px;
 }
 
 @media screen and (min-width: 835px) {

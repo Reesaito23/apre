@@ -1051,7 +1051,7 @@ body, header {
 
 @media screen and (min-width: 835px) {
   .product-contents-item__image {
-    width: initial;
+    width: 100%;
   }
 }
 
@@ -1148,8 +1148,12 @@ body, header {
 .product-participate-list__login {
   font-size: 14px;
   color: #fff;
-  padding: 6px 7px;
+  padding: 12px 10px;
   background-color: #AB9F66;
+}
+
+.product-participate-list__login:hover {
+  background-color: #5A5437;
 }
 
 .price {

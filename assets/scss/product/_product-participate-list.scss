@@ -32,8 +32,11 @@
   &__login{
     font-size: 14px;
     color: #fff;
-    padding: 6px 7px;
+    padding: 12px 10px;
     background-color: #AB9F66;
+    &:hover{
+      background-color: #5A5437;
+    }
   }
 
 }

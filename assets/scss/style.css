@@ -1139,6 +1139,9 @@ body, header {
 
 @media screen and (min-width: 835px) {
   .product-participate-list__item {
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
     width: 32%;
   }
 }
@@ -1164,6 +1167,7 @@ body, header {
   color: #fff;
   padding: 12px 10px;
   background-color: #AB9F66;
+  white-space: nowrap;
 }
 
 .product-participate-list__login:hover {

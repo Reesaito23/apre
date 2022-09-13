@@ -10,6 +10,10 @@
   &__block{
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
+    @include mq('desktop'){
+      justify-content: initial;
+    }
   }
   &__line{
     width: 30px;

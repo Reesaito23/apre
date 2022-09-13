@@ -29,6 +29,17 @@ body, header {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+@media screen and (min-width: 835px) {
+  .c-header__block {
+    -webkit-box-pack: initial;
+        -ms-flex-pack: initial;
+            justify-content: initial;
+  }
 }
 
 .c-header__line {
@@ -54,6 +65,9 @@ body, header {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .c-header-nav__list > *:not(:last-child) {
@@ -1093,7 +1107,7 @@ body, header {
 
 .product-participate-list {
   margin: 20px auto 0;
-  width: 90%;
+  width: 85%;
 }
 
 @media screen and (min-width: 835px) {
@@ -1118,9 +1132,9 @@ body, header {
       -ms-flex-align: center;
           align-items: center;
   width: 100%;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 @media screen and (min-width: 835px) {

@@ -2,6 +2,7 @@
   &__list{
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
     >*:not(:last-child) {
       margin-right: 8px;
       @include mq('desktop'){

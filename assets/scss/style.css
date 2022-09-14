@@ -1048,7 +1048,7 @@ body, header {
   width: 98%;
   background-color: #fff;
   padding: 30px 10px 30px 10px;
-  height: 300px;
+  min-height: 200px;
 }
 
 @media screen and (min-width: 835px) {
@@ -1060,7 +1060,7 @@ body, header {
 
 .product-contents-item__image {
   margin: 0 auto;
-  width: 60%;
+  width: 90%;
 }
 
 @media screen and (min-width: 835px) {
@@ -1071,11 +1071,12 @@ body, header {
 
 .product-contents-item__text {
   margin-top: 16px;
-  font-size: 16px;
+  font-size: 12px;
 }
 
 @media screen and (min-width: 835px) {
   .product-contents-item__text {
+    font-size: 16px;
     margin-top: 30px;
   }
 }
@@ -1332,34 +1333,28 @@ body, header {
 }
 
 .price-list__item p {
-  font-size: 13px;
+  font-size: 11px;
   position: relative;
   font-weight: bold;
+  text-align: center;
 }
 
 @media screen and (min-width: 835px) {
   .price-list__item p {
     font-size: 20px;
+    text-align: initial;
   }
 }
 
-.price-list__item p span {
-  position: absolute;
-  font-weight: initial;
-  bottom: -1em;
-  color: #333333;
-  font-size: 0.3em;
-  left: 50%;
-  -webkit-transform: translateX(-50%) translateY(100%);
-          transform: translateX(-50%) translateY(100%);
-  white-space: nowrap;
+.price-list__item p span:not(.price-list__sub-text) {
+  display: block;
+  font-size: 1.5em;
 }
 
 @media screen and (min-width: 835px) {
-  .price-list__item p span {
-    font-size: 0.65em;
-    white-space: nowrap;
-    bottom: -.5em;
+  .price-list__item p span:not(.price-list__sub-text) {
+    display: initial;
+    font-size: 1em;
   }
 }
 
@@ -1391,6 +1386,26 @@ body, header {
 
 .price-list__item-title p {
   color: #817746;
+}
+
+.price-list__sub-text {
+  position: absolute;
+  font-weight: initial;
+  bottom: -1em;
+  color: #333333;
+  font-size: 0.3em;
+  left: 50%;
+  -webkit-transform: translateX(-50%) translateY(100%);
+          transform: translateX(-50%) translateY(100%);
+  white-space: nowrap;
+}
+
+@media screen and (min-width: 835px) {
+  .price-list__sub-text {
+    font-size: 0.65em;
+    white-space: nowrap;
+    bottom: -.5em;
+  }
 }
 
 .step {

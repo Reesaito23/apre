@@ -17,25 +17,20 @@
       height: 124px;
     }
     p{
-      font-size: 13px;
+      font-size: 11px;
       position: relative;
       font-weight: bold;
+      text-align: center;
       @include mq('desktop'){
         font-size: 20px;
+        text-align: initial;
       }
-    span {
-        position: absolute;
-        font-weight: initial;
-        bottom: -1em;
-        color: #333333;
-        font-size: 0.3em;
-        left: 50%;
-        transform: translateX(-50%) translateY(100%);
-        white-space: nowrap;
+    span:not(.price-list__sub-text) {
+        display: block;
+        font-size: 1.5em;
         @include mq('desktop'){
-          font-size: 0.65em;
-          white-space: nowrap;
-          bottom: -.5em;
+          display: initial;
+          font-size: 1em;
         }
       }
     }
@@ -63,4 +58,20 @@
       }
     }
   }
+  &__sub-text{
+    position: absolute;
+      font-weight: initial;
+      bottom: -1em;
+      color: #333333;
+      font-size: 0.3em;
+      left: 50%;
+      transform: translateX(-50%) translateY(100%);
+      white-space: nowrap;
+    
+      @include mq('desktop') {
+        font-size: 0.65em;
+        white-space: nowrap;
+        bottom: -.5em;
+  }
+}
 }

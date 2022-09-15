@@ -10,14 +10,15 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 10px;
+    padding: 5px;
     @include mq('desktop'){
       height: 124px;
       padding: 0px;
       height: 124px;
+      padding: 10px;
     }
     p{
-      font-size: 11px;
+      font-size: 12px;
       position: relative;
       font-weight: bold;
       text-align: center;
@@ -45,7 +46,7 @@
     }
     &-title{
       grid-column-start: 1;
-        grid-column-end: 4;
+      grid-column-end: 4;
       background-color: #F7F5EC;
       height: 80px;
       @include mq('desktop'){
@@ -55,6 +56,10 @@
       }
       p{
         color: #817746;
+        font-size: 18px;
+        @include mq('desktop'){
+          font-size: 20px;
+        }
       }
     }
   }

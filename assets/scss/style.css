@@ -1399,9 +1399,9 @@ body, header {
 .price-list__sub-text {
   position: absolute;
   font-weight: initial;
-  bottom: -1em;
+  bottom: -.5em;
   color: #333333;
-  font-size: 15px;
+  font-size: 11px;
   left: 50%;
   -webkit-transform: translateX(-50%) translateY(100%);
           transform: translateX(-50%) translateY(100%);
